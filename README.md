@@ -4,7 +4,7 @@
 
 Description:
 ===========
-This Chef Cookbook Wrapper is a custom cookbook based on brint/wordpress-cookbook.
+This Chef Cookbook Wrapper is a custom cookbook based on [brint/wordpress-cookbook](https://github.com/brint/wordpress-cookbook).
 
 The Chef WordPress cookbook installs and configures WordPress according to the instructions at http://codex.wordpress.org/Installing_WordPress.
 
