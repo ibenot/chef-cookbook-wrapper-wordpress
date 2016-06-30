@@ -1,5 +1,7 @@
 # Chef Cookbook Wrapper + Wordpress
 
+![alt text](https://www.chef.io/blog/wp-content/uploads/2014/12/chefiomove-1024x514.png "Chef cookbook wrapper + Wordpress")
+
 Description:
 ===========
 This Chef Cookbook Wrapper is a custom cookbook based on brint/wordpress-cookbook.
