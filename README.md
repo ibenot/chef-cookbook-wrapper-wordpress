@@ -8,10 +8,9 @@ The Chef WordPress cookbook installs and configures WordPress according to the i
 
 Usage:
 =====
-Clone this repo and follow the steps below :
 
-1. zzz
-2. ddd 
+- To run this cookbook _quickly_, see point **7 to 10 below** to configure your virtual host on your workstation and run cookbook. Your default ip address is   `192.168.36.37`. Your default virtual host is `example.local`. You can change default values to following Tutorial below (steps 5/6/7). 
+- To _create your custom cookbook from scratch_ see **Tutorial** section below
 
 
 Tutorial: Create your custom cookbook wrapper from scratch
@@ -63,13 +62,13 @@ Tutorial: Create your custom cookbook wrapper from scratch
 	```
 
 
-5. Edit `attributes/default.rb` to override Wordpress server aliases with **your custom virtual host**
+6. Edit `attributes/default.rb` to override Wordpress server aliases with **your custom virtual host**
 
 	```ruby
 	default['wordpress']['server_aliases'] = ['example.local']
 	```
 	
-6. Edit your `hosts`file to **add your custom vhost with your ip address and custom virtual host** above :
+7. Edit your `hosts`file to **add your custom vhost with your ip address and custom virtual host** above :
 
 	- **Mac OS**: run this command to edit the file `open /private/etc/hosts`
 
@@ -80,7 +79,7 @@ Tutorial: Create your custom cookbook wrapper from scratch
 	192.168.36.37 	example.local
 	```	
 	
-7. Run this latest command to **run your cookbook**
+8. Run this latest command to **run your cookbook**
 
 	```shell
 	cd ~/learn-chef/chef-cookbook-wrapper-wordpress
@@ -92,17 +91,17 @@ Tutorial: Create your custom cookbook wrapper from scratch
 	#-----> Kitchen is finished. (Xm Xs) 
 	```	
 
-8. If necessary use this command to destroy cookbook **if you have made changes to the source code**
+9. If necessary use this command to destroy cookbook **if you have made changes to the source code**
 
 	```shell
 	kitchen destroy
 	```	
 
-9. Check if everything is good with **ping** command
+10. Check if everything is good with **ping** command
 
 	```shell
 	ping example.local
 	PING example.local (192.168.36.37): 56 data bytes
 	```	
 
-10. Open `http://example.local/wp-admin/install.php` in your browser to **install your wordpress site like usual**.
+11. Open `http://example.local/wp-admin/install.php` in your browser to **install your wordpress site like usual**.
